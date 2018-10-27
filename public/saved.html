@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="savedArts.js"></script>
+  <title>Andrew's Scraper</title>
+  <style>
+
+    hr {
+      color: black
+    }
+    body {
+      background-color: #ffffff
+    }
+
+    #photoBkg{
+      background-image: url("img/bkg.jpg");
+      height: 500px
+    
+    }
+
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+  .textLinks{
+      color: #2b2b2b;
+      font-size: 16px;
+      margin-bottom: 1000px;
+  }
+
+  .textText{
+    color: black;
+      font-size: 22px
+
+  }
+    textarea,
+    input {
+      display: block;
+      /* width: 100%; */
+      background-color: #ffffff;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+  </style>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Denver Post Scraper</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Saved Articles! <span class="sr-only">(current)</span></a></li>
+          <li><a href="/">Home</a></li>
+          <button type="button" id="displayButton" class="btn btn-default navbar-btn">Display Saved Articles</button>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</head>
+
+<body>
+
+  <body>
+    <div class="jumbotron" id="photoBkg">
+      <div class="container">
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Saved Articles</h2>
+        <div id="articles"></div>
+        <div id="notes"></div>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
